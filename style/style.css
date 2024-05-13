@@ -1,0 +1,1186 @@
+body {
+    direction: rtl;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1429px !important;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 -56px 94px rgba(145, 145, 145, 0.9);
+}
+
+.header__list--items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #FFF;
+    padding-top: 22px;
+    padding-bottom: 19px;
+}
+
+.header__list--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #5D6475;
+    text-align: right;
+    font-family: "Dana", "IRANSans", "Tahoma", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+    color: #5D6475;
+    margin-bottom: 0 !important;
+    font-family: "Dana", "IRANSans", "Tahoma", sans-serif;
+}
+
+.header__list--ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+}
+
+.header-back-button {
+    display: flex;
+    background-color: #8ED557;
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: #ffffff;
+    border: unset;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: "Dana", "IRANSans", "Tahoma", sans-serif;
+    font-size: 16px;
+}
+
+.header-back-button:hover {
+    background-color: #7fc945;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__background {
+    background: url("./images/green-background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 751px;
+    height: 651px;
+    margin-top: 60px;
+}
+
+.hero-content-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 83px;
+}
+
+.hero__title {
+    color: #FFF;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hero__title--span {
+    color: #264809;
+    text-align: center;
+    text-shadow: 0 0 30px #5AB215;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hero__sub--title {
+    color: #3A770B;
+    text-align: center;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+.hero__text {
+    color: #14314E;
+    text-align: center;
+    text-shadow: 0 0 30px #E0FF87;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    display: flex;
+    border-radius: 15px;
+    background: linear-gradient(185deg, #ABE75D -26.16%, rgba(171, 231, 93, 0.00) 74.25%);
+    padding: 20px 20px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+@keyframes bird-flip {
+    0% {
+        transform: scaleX(1) translateX(0);
+    }
+    50% {
+        transform: scaleX(-1) translateX(80px);
+    }
+    100% {
+        transform: scaleX(-1) translateX(0);
+    }
+}
+
+@keyframes bird {
+    0% {
+        transform: scaleY(1) translateY(0);
+    }
+    50% {
+        transform: scaleY(-1) translateY(70px);
+    }
+    100% {
+        transform: scaleX(-1) translateX(0);
+    }
+}
+
+@keyframes bird--flip {
+    0% {
+        transform: scaleY(0) translateY(0);
+    }
+    50% {
+        transform: scaleY(-1) translateY(90px);
+    }
+    100% {
+        transform: scaleY(-1) translateY(0);
+    }
+}
+
+.hero__b1 {
+    position: absolute;
+    right: 34%;
+    fill: #0D3A66;
+    z-index: 2;
+    top: 85%;
+    animation-name: bird-flip;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hero__b2 {
+    position: absolute;
+    right: 39%;
+    top: 75%;
+    fill: #0D3A66;
+    z-index: 2;
+    animation-name: bird;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hero__b3 {
+    position: absolute;
+    right: 45%;
+    top: 68%;
+    fill: #0D3A66;
+    z-index: 2;
+    animation-name: bird-flip;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hero__b4 {
+    position: absolute;
+    right: 60%;
+    top: 80%;
+    fill: #0D3A66;
+    z-index: 2;
+    animation-name: bird-flip;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hero__b5 {
+    position: absolute;
+    right: 71%;
+    top: 91%;
+    animation-name: bird--flip;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hero__banner {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 46%;
+}
+
+.hero__banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero__image-lan {
+    display: flex;
+    margin-bottom: 222px;
+    gap: 57px;
+    padding-top: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.hero__image--persian {
+    fill: rgba(27, 103, 176, 0.10);
+}
+
+.hero__image--english {
+    fill: rgba(27, 103, 176, 0.10);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.description__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.description__title {
+    color: #0C58A1;
+    text-align: center;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.description__sub--title {
+    color: #6B6B6B;
+    text-align: center;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    width: 848px;
+    height: 108px;
+    flex-shrink: 0;
+}
+
+.description__span {
+    color: #61C25F;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.items {
+    margin-top: 140px;
+}
+
+.items__card--info {
+    position: relative;
+}
+
+.items__img {
+    width: 100%;
+    height: 153px;
+    position: relative;
+    margin-bottom: -154px;
+    z-index: 1 !important;
+}
+
+.items--svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background__items {
+    position: absolute;
+}
+
+.blue__background {
+    position: absolute;
+}
+
+.first-background {
+    position: absolute;
+}
+
+.second-background {
+    position: absolute;
+}
+
+.third-background {
+    position: absolute;
+}
+
+.items__border {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.items__text {
+    position: absolute;
+    z-index: 5;
+}
+
+.items__universal {
+    position: absolute;
+    z-index: 5;
+}
+
+.items__card--info:hover {
+    background-image: linear-gradient(0deg, #57D564 24.59%, #8ED557 115.16%);
+}
+
+.items__card--info:hover .items__card__sub--title {
+    color: #FFF;
+}
+
+.items__card--info:hover .items__card__title {
+    color: #1F4F19;
+}
+
+
+.items__card--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 297px;
+    border-radius: 18px;
+    cursor: pointer;
+    background-image: linear-gradient(0deg, rgba(228, 228, 228, 0.70) 24.59%, rgba(223, 223, 223, 0.00) 115.16%);
+    transition: all 0.3s;
+}
+
+.items__card__title {
+    color: #14314E;
+    text-align: center;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 75px;
+}
+
+.items__card__title:hover {
+    color: #1F4F19;
+    transition: 0.3s;
+}
+
+.items__card__sub--title {
+    color: #476582;
+    text-align: center;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 20px 40px 20px 42px;
+}
+
+.st0 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+}
+
+.iran--img {
+    width: 44px;
+    height: 44px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.baj {
+    position: relative;
+    background: #F9F9F9;
+    margin-top: 137px;
+
+}
+
+.baj__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.baj__title {
+    color: #0D3A66;
+    text-align: right;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    border-right: 3px solid #00D1FF;
+    width: 23%;
+    padding-right: 8px;
+    position: absolute;
+    right: 28%;
+    top: 20%;
+}
+
+.baj__top-img {
+    position: absolute;
+    top: 11%;
+    right: 51%;
+    z-index: 3;
+}
+
+.baj__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(162px);
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.telegram--robot {
+    margin-top: 300px;
+    position: relative;
+}
+
+.telegram__span {
+    color: #61C25F;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.9px;
+}
+
+.telegram__title {
+    color: #0C58A1;
+    text-align: right;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 28px;
+    padding-bottom: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.telegram__text {
+    color: #6B6B6B;
+    text-align: justify;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.telegram__info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.telegram__button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 8px;
+    background: #8ED557;
+    justify-content: center;
+    padding: 10px 28px;
+    color: #ffffff;
+    border: unset;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.telegram__button:hover {
+    background-color: #26A5E4;
+    transition: 0.3s;
+}
+
+.telegram__button svg path {
+    stroke: #5CA325;
+    transition: 0.3s;
+}
+
+.telegram__button:hover svg path {
+    stroke: #0C6D9D;
+    transition: 0.3s;
+}
+
+
+.button__icon {
+    color: #5CA325;
+}
+
+.telegram__img img {
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.questions {
+    margin-top: 180px;
+}
+
+.questions__title {
+    color: #184673;
+    text-align: center;
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 49px;
+}
+
+.accordion-item .accordion-header {
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    color: #30353D;
+    text-align: right;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.accordion-header .accordion-button:hover {
+    background-color: unset;
+    color: unset;
+}
+
+.accordion-header .accordion-button:focus {
+    background-color: unset;
+    border: none;
+    color: unset;
+    box-shadow: unset;
+}
+
+.accordion-collapse .accordion-body {
+    font-family: "Yekan Bakh FaNum", "IRANSans", "Dana", sans-serif;
+    color: #7D8087;
+    text-align: justify;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+#accordionExample .accordion-item:not(:first-of-type) {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+#accordionExample .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+}
+
+#accordionExample .accordion-button:not(.collapsed) {
+    color: unset;
+    background-color: unset;
+}
+
+.accordion-collapse .accordion-body {
+    border-top: 1px solid #d0cece;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.footer {
+    text-align: center;
+    margin: 120px 0 0 0;
+    position: relative;
+}
+
+.footer__content {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+.footer__content li {
+    width: 53px;
+    height: 53px;
+    background: #ECECEC;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.3s;
+    padding: 7px;
+}
+
+.footer__content li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 13px;
+    text-decoration: none;
+}
+
+.footer__content li.footer__content-text {
+    width: auto;
+    min-width: 130px;
+}
+
+.footer__content li.footer__content-text a {
+    color: #ffffff;
+    width: auto;
+    min-width: 130px;
+}
+
+.footer__content li.footer__content-text .footer__buttons-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.footer__content li.footer__content-text.telegram {
+    background: linear-gradient(284deg, #67c9f5 0%, #2ca5e0 100%);
+    box-shadow: 0 4px 15px rgba(142, 207, 255, 0.32);
+    transition: background 0.8s ease-out;
+}
+
+.footer__content li.footer__content-text.telegram:hover {
+    background-position: -144px;
+}
+
+.footer__content li.footer__content-text.instagram {
+    background: linear-gradient(230deg, #F45C9F 9.09%, #FF7563 96.96%);
+    box-shadow: 0 4px 15px rgba(246, 98, 146, 0.3);
+    transition: background 0.8s ease-out;
+}
+
+.footer__content li.footer__content-text.instagram:hover {
+    background-position: -165px;
+}
+
+.footer__content li .footer__buttons-icon {
+    display: block;
+    width: 60%;
+    height: 60%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__content li .footer__buttons-icon.facebook {
+    background-image: url("images/frame.svg");
+}
+
+.footer__content li .footer__buttons-icon.instagram {
+    background-image: url("images/instagram.svg");
+}
+
+.footer__content li .footer__buttons-icon.telegram {
+    background-image: url("images/tlg.svg");
+}
+
+.footer__content li .footer__buttons-icon.twitter {
+    background-image: url("images/twitter.svg");
+}
+
+.footer__content li .footer__buttons-icon.linkdin {
+    background-image: url("images/linkdin.svg");
+}
+
+.footer__content li .footer__buttons-icon.aparat {
+    background-image: url("images/aparat.svg");
+    width: 25px;
+    height: 27px;
+}
+
+.footer__content li:hover {
+    background: #e5e4e4;
+}
+
+
+
+.footer__link a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Dana", "IRANSans", "Tahoma", sans-serif;
+    margin-top: 15px;
+}
+
+.footer__text {
+    width: 100%;
+    text-align: center;
+    margin-top: -70px;
+    color: #3C4354;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Dana", "IRANSans", "Tahoma", sans-serif;
+}
+
+.footer__info--text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__dsc{
+    position: absolute;
+    right: 26%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header {
+        display: none;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero__sub--title {
+        font-size: 20px;
+    }
+
+    .hero__text {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 11px 38px;
+        margin-top: 16px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .hero__banner {
+        top: 49%;
+    }
+
+    .hero__banner img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .hero__background {
+        background-size: 100% 75%;
+        display: unset;
+    }
+
+
+    .hero__birds--img {
+        display: none;
+    }
+
+    .hero-content-texts {
+        margin-top: 10px;
+    }
+
+    .hero__image-lan {
+        margin-bottom: 0;
+        gap: 14px;
+        padding-top: 34px;
+    }
+
+    .hero__image--persian img{
+        width: 119px;
+    }
+
+    .hero__image--english img{
+        width: 119px;
+    }
+
+    .description__text {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 28px;
+    }
+
+    .description__sub--title {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        width: 328px;
+        height: 170px;
+    }
+
+    .description__span {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .items {
+        margin-top: 100px;
+    }
+
+    .cards {
+        margin-bottom: 86px;
+    }
+
+    .baj{
+        margin-top: 100px;
+    }
+
+    .baj__info {
+        padding-top: 60px;
+    }
+
+    .baj__img img {
+        width: 325px;
+        height: 185px;
+    }
+
+    .baj__img {
+        position: unset;
+    }
+
+    .baj__top-img {
+        top: 65%;
+        right: 25%;
+    }
+
+    .baj__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        position: unset;
+        width: unset;
+        border-bottom: 3px solid #00D1FF;
+        border-right: unset;
+    }
+
+    .baj__top-img img {
+        width: 179px;
+        height: 135px;
+    }
+
+    .telegram__title {
+        text-align: center;
+    }
+
+    .telegram__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion-header .accordion-button {
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+    }
+
+    .footer__text{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .footer__info img{
+        width: 100%;
+        height: 80px;
+    }
+
+    .footer__background {
+position: unset;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .header{
+        display: none;
+    }
+
+    .hero__background{
+        height: 687px;
+        margin-top: 30px;
+    }
+
+    .hero__title{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4%;
+    }
+
+    .hero__birds--img {
+        display: none;
+    }
+
+    .hero__sub--title{
+        position: absolute;
+        top: 28%;
+        left: unset;
+    }
+
+    .hero__text{
+        font-size: 15px;
+        position: absolute;
+        top: 34%;
+        margin-top: 0;
+        padding: 10px 56px;
+    }
+
+    .hero__image-lan{
+        margin-right: 40px;
+        gap: 0;
+    }
+
+    .hero__image--persian img{
+        width: 75%;
+    }
+
+    .hero__image--english img{
+        width: 75%;
+    }
+
+    .hero__banner{
+        top: 19%;
+    }
+
+
+    .description__sub--title{
+        width: unset;
+        height: unset;
+    }
+
+    .items .cards{
+        gap: 75px;
+    }
+
+    .baj__info {
+        padding-top: 60px;
+    }
+
+    .baj__img img {
+        width: 325%;
+        height: 170%;
+    }
+
+    .baj__img {
+        position: unset;
+    }
+
+    .baj__top-img {
+        top: 55%;
+        right: 27%;
+    }
+
+    .baj__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        position: unset;
+        width: unset;
+    }
+
+    .baj__top-img img {
+        width: 179px;
+        height: 135px;
+    }
+
+    .telegram__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .telegram__text{
+        text-align: right;
+    }
+
+    .telegram__img{
+        margin-top: 100px;
+    }
+
+    .telegram__button{
+        margin-top: 30px;
+    }
+
+    .accordion-header .accordion-button {
+        text-align: right;
+        font-size: 13px;
+    }
+
+    .footer__text{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .footer__info img{
+        width: 100%;
+        height: 80px;
+    }
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero__birds--img {
+        display: none;
+    }
+
+    .description__sub--title{
+        width: unset;
+    }
+
+    .items{
+        margin-top: 80px;
+    }
+
+    .items__card--info{
+        margin-top: 80px;
+        margin-bottom: 85px;
+    }
+
+    .items__img{
+        margin-bottom: -250px;
+    }
+
+    .cards{
+        width: 100%;
+    }
+
+    .baj__img img{
+        width: 325%;
+        height: 170%;
+    }
+
+    .baj__top-img {
+        right: 43%;
+    }
+
+    .baj__title{
+        width: 34%;
+        right: 10%;
+        top: 19%;
+    }
+
+    .telegram__button{
+        margin-top: 30px;
+    }
+
+    .questions{
+        margin-top: 112px;
+    }
+
+    .footer__background{
+        right: 7%;
+    }
+
+    .header__list{
+        padding: 0;
+    }
+    .header__list--item{
+        font-size: 12px;
+    }
+
+    .header-back-button{
+        font-size: 12px;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+    .header__list{
+        padding: 0;
+    }
+
+    .header-back-button{
+        padding: 10px 23px;
+    }
+
+    .cards{
+        width: 600px;
+    }
+
+    .hero__birds--img {
+        display: none;
+    }
+
+    .baj__title{
+        right: 19%;
+        top: 20%;
+        width: 37%;
+    }
+
+    .footer__background{
+        right: 18%;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
