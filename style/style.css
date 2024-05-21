@@ -93,7 +93,7 @@ body {
 }
 
 .hero__background {
-    background: url("./images/green-background.png");
+    background: url("../assets/images/green-background.png");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -727,27 +727,27 @@ body {
 }
 
 .footer__content li .footer__buttons-icon.facebook {
-    background-image: url("images/frame.svg");
+    background-image: url("../assets/images/frame.svg");
 }
 
 .footer__content li .footer__buttons-icon.instagram {
-    background-image: url("images/instagram.svg");
+    background-image: url("../assets/images/instagram.svg");
 }
 
 .footer__content li .footer__buttons-icon.telegram {
-    background-image: url("images/tlg.svg");
+    background-image: url("../assets/images/tlg.svg");
 }
 
 .footer__content li .footer__buttons-icon.twitter {
-    background-image: url("images/twitter.svg");
+    background-image: url("../assets/images/twitter.svg");
 }
 
 .footer__content li .footer__buttons-icon.linkdin {
-    background-image: url("images/linkdin.svg");
+    background-image: url("../assets/images/linkdin.svg");
 }
 
 .footer__content li .footer__buttons-icon.aparat {
-    background-image: url("images/aparat.svg");
+    background-image: url("../assets/images/aparat.svg");
     width: 25px;
     height: 27px;
 }
